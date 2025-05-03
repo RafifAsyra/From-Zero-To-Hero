@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>From Zero To Hero</title>
+    <title>From Zero To Hero</title>    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         .section1-1 {
             margin-left: 290px;
@@ -132,22 +135,19 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Products-section">Products</a>
+                        <a class="nav-link" href="#Products-Sec">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Biodata-section">Biodata</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Article-section">Article</a>
+                        <a class="nav-link" href="#Blog-Sec">Blog</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            Other
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#Quote-section">Quote</a></li>
-                            <li><a class="dropdown-item" href="#About-Us">Contact</a></li>
+                            <li><a class="dropdown-item" href="#Quote-section">Quote</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -155,7 +155,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#About-Us">About Us</a>
+                        <a class="nav-link" href="#Footer-Sec">Contact Us</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -185,7 +185,7 @@
         </div>
     </section>
     <!-- SEARCH PRODUCT -->
-    <section class="row py-5" id="Products-section">
+    <section class="row py-5" id="Products-Sec">
         <div class="col text-center">
             <h1>Product examples</h1>
             <div class="lead mb-4">Find the best product that suits your needs</div>
@@ -229,15 +229,15 @@
         </div>
     </section>
     <!-- BIODATA -->
-    <section class="row section-bg-custom justify-content-center py-5" id="Biodata-section">
+    <section class="row section-bg-custom justify-content-center py-5">
         <div class="col-sm-8">
             <div class="card bg-light text-dark">
                 <div class="card-body">
                     <div class="row p-4">
                         <div class="col-sm-6 order-md-last text-center">
-                            <img src="Images/ilustration/Business Man.svg" alt="ilustration-2" class="ilustration-2">
+                            <img src="Images/ilustration/Business Man.svg" alt="ilustration-2" class="ilustration-2" data-aos="fade-in" data-aos-duration="1300">
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-6" data-aos="fade-right" data-aos-duration="1000">
                             <h1 class="mb-4">BIODATA</h1>
                             <div>
                                 <div>
@@ -266,15 +266,21 @@
                 </div>
             </div>
         </div>
+        <div id="Blog-Sec"></div>
     </section>
-    <!-- Article -->
-    <section class="row section-bg-custom justify-content-center py-5" id="Article-section">
+    <!-- BLOG -->
+    <section class="row section-bg-custom justify-content-center py-5">
         <div class="col-sm-8 text-light">
             <div class="row">
-                <div class="col-sm-6 text-center">
-                    <img src="images/ilustration/Macbook-Ilustration-3.svg" alt="ilustration-3" class="ilustration-3">
+                <div class="text-center" data-aos="zoom-in" data-aos-duration="1000">
+                    <h1>"From Zero To Hero"</h1>
                 </div>
-                <div class="col-sm-6 section5-1">
+            </div>
+            <div class="row py-5">
+                <div class="col-sm-6 text-center">
+                    <img src="images/ilustration/Macbook-Ilustration-3.svg" alt="ilustration-3" class="ilustration-3" data-aos="zoom-in-right" data-aos-duration="1300">
+                </div>
+                <div class="col-sm-6 section5-1" data-aos="zoom-in-left" data-aos-duration="1300">
                     <h5>1955-1974</h5>
                     <h1>Awal Kehidupan & Pendidikan</h1>
                     <p>Steve Jobs, seorang tokoh visioner di dunia teknologi, lahir di San Francisco, California, pada tanggal 24 Februari 1955.
@@ -284,9 +290,9 @@
             </div><div class="col-sm-6 text-center"></div>
             <div class="row my-5">
                 <div class="col-sm-6 text-center order-md-last">
-                    <img src="images/ilustration/Ipod-Ilustration-3.svg" alt="ilustration-4" class="ilustration-3">
+                    <img src="images/ilustration/Ipod-Ilustration-3.svg" alt="ilustration-4" class="ilustration-3" data-aos="zoom-in-left" data-aos-duration="1400">
                 </div>
-                <div class="col-sm-6 section5-1">
+                <div class="col-sm-6 section5-1" data-aos="zoom-in-right" data-aos-duration="1400">
                     <h5>1975-1996</h5>
                     <h1>Mendirikan Apple & Tantangan</h1>
                     <p>Pada tahun 1976, bersama Steve Wozniak dan Ronald Wayne, Jobs mendirikan Apple di garasi keluarganya.
@@ -297,9 +303,9 @@
             </div>
             <div class="row">
                 <div class="col-sm-6 text-center">
-                    <img src="images/ilustration/Macintosh-Ilustration-3.svg" alt="ilustration-5" class="ilustration-3">
+                    <img src="images/ilustration/Macintosh-Ilustration-3.svg" alt="ilustration-5" class="ilustration-3" data-aos="zoom-in-right" data-aos-duration="1300">
                 </div>
-                <div class="col-sm-6 section5-1">
+                <div class="col-sm-6 section5-1" data-aos="zoom-in-left" data-aos-duration="1300">
                     <h5>1997-2011</h5>
                     <h1>Kembali ke Apple & Kesuksesan</h1>
                     <p>Pada tahun 1997, Jobs kembali ke Apple dan memimpin perusahaan menuju era kejayaan baru dengan merilis produk inovatif seperti iMac, iPod, iPhone, dan iPad.
@@ -395,7 +401,7 @@
         </div>
     </section>
 </main>
-<footer class="container-fluid py-2 bg-black text-warning" id="About-Us">
+<footer class="container-fluid py-2 bg-black text-warning" id="Footer-Sec">
     <div class="row justify-content-center my-5">
         <div class="col-sm-10">
             <div class="row">
@@ -443,5 +449,9 @@
     </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
